@@ -20,6 +20,14 @@ scripts:
     description: |
       Run `dart analyze` in all packages.
        - Note: you can also rely on your IDEs Dart Analysis / Issues window.
+  
+  getPub:
+    run: |
+      melos exec -c 5 -- \
+        flutter pub get
+    description: |
+      Run `pub get` in all packages.
+       - Note: you can also rely on your IDEs Dart Analysis / Issues window.
 
   format:
     run: dart pub global run flutter_plugin_tools format
